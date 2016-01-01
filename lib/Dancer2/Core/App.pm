@@ -1021,6 +1021,8 @@ sub add_route {
     my $method = $route->method;
 
     push @{ $self->routes->{$method} }, $route;
+
+    return $route;
 }
 
 sub route_exists {
